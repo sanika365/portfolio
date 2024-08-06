@@ -2,8 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
-// import HeroImg from "../sanika.jpg"
-import HeroImg from "../../images/HeroImage1.jpg";
+import HeroImg from "../../images/HeroImage.jpeg"; // eslint-disable-line
 
 import HeroBgAnimation from "../HeroBgAnimation";
 import { Tilt } from "react-tilt";
@@ -258,10 +257,16 @@ const Hero = () => {
             <HeroRightContainer>
               <motion.div {...headContentAnimation}>
                 <Tilt>
-                  <a >
-                    <Img src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k" alt="John doe" />
+                  <a href="#About">
+                    <Img
+                      src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k"
+                      alt="sanika kachare"
+                      onError={(e) => {
+                        e.target.onerror = null; // Prevents looping
+                        e.target.src = HeroImg; // Fallback image
+                      }}
+                    />
                   </a>
-                  
                 </Tilt>
               </motion.div>
             </HeroRightContainer>
