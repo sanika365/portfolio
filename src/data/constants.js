@@ -226,7 +226,7 @@ export const projects = [
     description:
       "This is a Full-stack Car rental website with 3 modules (Admin , Vendor , User ) where Admin can dynamically manage content , availability of cars , manage cars , manage users , filter, search , see order history , Vendor after getting approved by admin can list hist vehicle in the site.",
     image:
-      "https://private-user-images.githubusercontent.com/141582953/393997455-4b769f7d-5d2c-43a7-8283-07fa8402de92.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTk5OTY1NjQsIm5iZiI6MTc1OTk5NjI2NCwicGF0aCI6Ii8xNDE1ODI5NTMvMzkzOTk3NDU1LTRiNzY5ZjdkLTVkMmMtNDNhNy04MjgzLTA3ZmE4NDAyZGU5Mi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUxMDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MTAwOVQwNzUxMDRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kMWQ1OTBlNTI3N2Q2MzJhNjhkNWMwYzBkZjUxN2I5MTA5ZjBkNmU3MDk2MTY3NzY2YzQ4ZDkxMDMzNTRlYjVlJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.7-rHC_vutSTm_zb2yQIgqTopNeeAvf0m5LDoDjUSa84",
+      "https://github.com/user-attachments/assets/4b769f7d-5d2c-43a7-8283-07fa8402de92",
     tags: ["React ", " NodeJs", "mongodb"],
     category: "web app",
     github: "https://github.com/sanika365/Rent-a-Ride",
