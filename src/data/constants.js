@@ -4,7 +4,7 @@ export const Bio = {
   roles: ["Software developer", "programmer", "full-stack developer"],
   subTitle: "I develop 3D visuals, user interfaces and web applications",
   description:
-    "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+    "A motivated and curious learner, I love turning challenges into opportunities to grow. With a passion for creating high-quality work and a mindset focused on progress, I’m always excited to build, learn, and make an impact through what I do., I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/sanika365",
   resume:
    " https://drive.google.com/file/d/14x35tmrCJWOxN2Ry23_07GWMps0CJivb/view?usp=drive_link",
