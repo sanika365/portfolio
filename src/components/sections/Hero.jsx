@@ -260,12 +260,12 @@ const Hero = () => {
                   <a href="#About">
                     <Img
                       src="https://portfolio-image-store.s3.ap-south-1.amazonaws.com/1706283290608-n4hq7k"
-                      alt="sanika kachare"
+                     alt="sanika kachare"
                       onError={(e) => {
                         e.target.onerror = null; // Prevents looping
                         e.target.src = HeroImg; // Fallback image
                       }}
-                    />
+                    /> 
                   </a>
                 </Tilt>
               </motion.div>
