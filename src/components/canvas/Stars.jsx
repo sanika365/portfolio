@@ -1,4 +1,4 @@
-import React, { useRef, useState, Suspense } from "react";
+import React, { useRef, useState, useEffect, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as random from "maath/random/dist/maath-random.esm";
@@ -6,9 +6,10 @@ import styled from "styled-components";
 
 const StyledCanvasWrapper = styled.div`
   width: 100%;
-  height: auto;
+  height: 100vh;
   position: absolute;
   inset: 0;
+  z-index: 0;
 `;
 
 const Stars = (props) => {
@@ -17,7 +18,7 @@ const Stars = (props) => {
     random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
 
-  useFrame((state, delta) => {
+  useFrame((_, delta) => {
     ref.current.rotation.x -= delta / 10;
     ref.current.rotation.y -= delta / 15;
   });
@@ -29,7 +30,7 @@ const Stars = (props) => {
           transparent
           color="#f272c8"
           size={0.002}
-          sizeAttenuation={true}
+          sizeAttenuation
           depthWrite={false}
         />
       </Points>
@@ -38,6 +39,12 @@ const Stars = (props) => {
 };
 
 const StyledStarsCanvas = () => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+
+  if (!mounted) return null;
+
   return (
     <StyledCanvasWrapper>
       <Canvas camera={{ position: [0, 0, 1] }}>
